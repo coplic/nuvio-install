@@ -1,0 +1,15 @@
+{
+"name": "Rafa Apps",
+"identifier": "com.coplic.apps",
+"apps": [
+{
+"name": "Nuvio",
+"bundleIdentifier": "com.nuvio.app",
+"developerName": "Nuvio",
+"version": "1.4.1",
+"downloadURL": "https://github.com/coplic/nuvio-install/releases/download/v1.4.1/Stable_1-4-1.ipa",
+"localizedDescription": "Nuvio Media Hub",
+"iconURL": "https://coplic.github.io/nuvio-install/icon.png"
+}
+]
+}
