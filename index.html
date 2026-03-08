@@ -1,76 +1,185 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 <head>
-<title>Nuvio Installer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nuvio Installer</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: white;
+      line-height: 1.5;
+    }
 
-<style>
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
 
-body{
-font-family:Arial;
-background:#0f172a;
-color:white;
-text-align:center;
-margin-top:120px;
-}
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
 
-.container{
-max-width:500px;
-margin:auto;
-}
+    h1, h2, h3 {
+      margin-top: 0;
+    }
 
-button{
-width:100%;
-padding:18px;
-margin-top:20px;
-font-size:20px;
-border:none;
-border-radius:10px;
-cursor:pointer;
-}
+    h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
 
-.altstore{
-background:#2563eb;
-color:white;
-}
+    .subtitle {
+      color: #cbd5e1;
+      margin-bottom: 30px;
+      font-size: 18px;
+    }
 
-.download{
-background:#22c55e;
-color:white;
-}
+    .step {
+      display: inline-block;
+      background: #2563eb;
+      color: white;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
 
-</style>
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      border-radius: 12px;
+      padding: 14px 20px;
+      font-weight: bold;
+      margin-top: 14px;
+      margin-right: 10px;
+    }
 
+    .btn-primary {
+      background: #2563eb;
+      color: white;
+    }
+
+    .btn-green {
+      background: #16a34a;
+      color: white;
+    }
+
+    .btn-gray {
+      background: #374151;
+      color: white;
+    }
+
+    ol, ul {
+      padding-left: 20px;
+    }
+
+    .note {
+      background: #1e293b;
+      border-left: 4px solid #f59e0b;
+      padding: 14px 16px;
+      border-radius: 10px;
+      margin-top: 18px;
+      color: #e5e7eb;
+    }
+
+    .small {
+      font-size: 14px;
+      color: #94a3b8;
+    }
+
+    .footer {
+      margin-top: 30px;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    code {
+      background: #0b1220;
+      padding: 2px 6px;
+      border-radius: 6px;
+      color: #93c5fd;
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <h1>Nuvio Installer</h1>
+    <p class="subtitle">
+      Install Nuvio on iPhone or iPad using AltStore.
+    </p>
 
-<div class="container">
+    <div class="card">
+      <div class="step">Step 1</div>
+      <h2>Install AltStore first</h2>
+      <p>
+        You need AltStore on your iPhone or iPad before installing Nuvio.
+        AltStore cannot be installed directly from Safari. You need a computer
+        the first time.
+      </p>
 
-<h1>Nuvio Installer</h1>
+      <a class="btn btn-primary" href="https://altstore.io" target="_blank">
+        Open AltStore Website
+      </a>
 
-<p>Follow these steps to install Nuvio on your iPhone or iPad</p>
+      <div class="note">
+        You must install <strong>AltServer</strong> on your Mac or PC, connect
+        your iPhone/iPad once, and install AltStore before continuing.
+      </div>
+    </div>
 
-<h2>Step 1</h2>
-<p>Install AltStore</p>
+    <div class="card">
+      <div class="step">Step 2</div>
+      <h2>Download Nuvio IPA</h2>
+      <p>
+        After AltStore is installed on your device, download the Nuvio IPA file.
+      </p>
 
-<a href="https://altstore.io">
-<button class="altstore">Install AltStore</button>
-</a>
+      <a class="btn btn-green" href="https://github.com/coplic/nuvio-install/releases/download/v1.4.1/Stable_1-4-1.ipa">
+        Download Nuvio IPA
+      </a>
 
-<h2>Step 2</h2>
-<p>Download the Nuvio app</p>
+      <p class="small">
+        The file will usually go to <code>Files &gt; Downloads</code>.
+      </p>
+    </div>
 
-<a href="https://github.com/coplic/nuvio-install/releases/download/v1.4.1/Stable_1-4-1.ipa">
-<button class="download">Download Nuvio</button>
-</a>
+    <div class="card">
+      <div class="step">Step 3</div>
+      <h2>Install Nuvio from AltStore</h2>
+      <ol>
+        <li>Open <strong>AltStore</strong> on your iPhone or iPad.</li>
+        <li>Tap the <strong>+</strong> button.</li>
+        <li>Select the downloaded <strong>Nuvio IPA</strong> file.</li>
+        <li>Wait for AltStore to finish installing the app.</li>
+      </ol>
 
-<p style="margin-top:40px;font-size:14px;">
-After downloading the file, open AltStore → press + → select the Nuvio IPA
-</p>
+      <div class="note">
+        If Nuvio was already installed before, AltStore may ask whether you want
+        to keep the old version or replace it. In most cases, choose
+        <strong>Remove App</strong> so AltStore can manage it properly.
+      </div>
+    </div>
 
-</div>
+    <div class="card">
+      <h2>Important</h2>
+      <ul>
+        <li>AltStore needs a computer for the first installation.</li>
+        <li>With a free Apple ID, apps normally need to be refreshed every 7 days.</li>
+        <li>If AltStore is already set up correctly, refreshing can happen automatically.</li>
+      </ul>
+    </div>
 
+    <div class="footer">
+      This installer page provides the IPA file and setup instructions. It does not bypass Apple's installation requirements.
+    </div>
+  </div>
 </body>
 </html>
