@@ -4,33 +4,73 @@
 <head>
 <title>Nuvio Installer</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
+
 body{
 font-family:Arial;
-background:#111;
+background:#0f172a;
 color:white;
 text-align:center;
 margin-top:120px;
 }
-button{
-background:#2D9EDC;
-color:white;
-border:none;
-padding:20px;
-font-size:22px;
-border-radius:12px;
+
+.container{
+max-width:500px;
+margin:auto;
 }
+
+button{
+width:100%;
+padding:18px;
+margin-top:20px;
+font-size:20px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+.altstore{
+background:#2563eb;
+color:white;
+}
+
+.download{
+background:#22c55e;
+color:white;
+}
+
 </style>
+
 </head>
+
 <body>
+
+<div class="container">
 
 <h1>Nuvio Installer</h1>
 
-<p>Install Nuvio on your iPhone or iPad</p>
+<p>Follow these steps to install Nuvio on your iPhone or iPad</p>
 
-<a href="sidestore://source?url=https://coplic.github.io/nuvio-install/source.json">
-<button>Install Nuvio</button>
+<h2>Step 1</h2>
+<p>Install AltStore</p>
+
+<a href="https://altstore.io">
+<button class="altstore">Install AltStore</button>
 </a>
+
+<h2>Step 2</h2>
+<p>Download the Nuvio app</p>
+
+<a href="https://github.com/coplic/nuvio-install/releases/download/v1.4.1/Stable_1-4-1.ipa">
+<button class="download">Download Nuvio</button>
+</a>
+
+<p style="margin-top:40px;font-size:14px;">
+After downloading the file, open AltStore → press + → select the Nuvio IPA
+</p>
+
+</div>
 
 </body>
 </html>
